@@ -1,8 +1,8 @@
-# [cite_start]ClaimSetu: The Zero-UI Medical Claim Agent for Bharat [cite: 1, 2]
+# [cite_start]MediClaim: The Zero-UI Medical Claim Agent for Bharat [cite: 1, 2]
 
 [cite_start]**"No App. No English. No Rejections."** [cite: 22]
 
-[cite_start]ClaimSetu is a "Zero-UI" AI agent designed to remove the friction of filing health insurance claims in India[cite: 12]. [cite_start]Instead of complex apps, users interact via WhatsApp using voice notes in their native language and photos of physical bills[cite: 13].
+[cite_start]Mediclaim is a "Zero-UI" AI agent designed to remove the friction of filing health insurance claims in India[cite: 12]. [cite_start]Instead of complex apps, users interact via WhatsApp using voice notes in their native language and photos of physical bills[cite: 13].
 
 ---
 
