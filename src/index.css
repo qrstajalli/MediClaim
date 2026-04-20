@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ClaimSetu Design System — Modern Healthcare Trust */
+@layer base {
+  :root {
+    --background: 138 25% 98%;
+    --foreground: 200 25% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 200 25% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 200 25% 12%;
+
+    /* Premium WhatsApp/Healthcare Green - more vibrant */
+    --primary: 152 65% 42%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 152 75% 55%;
+
+    --secondary: 152 30% 94%;
+    --secondary-foreground: 200 25% 12%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 15% 45%;
+
+    --accent: 152 65% 92%;
+    --accent-foreground: 152 76% 25%;
+
+    --destructive: 350 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --success: 152 70% 38%;
+    --success-foreground: 0 0% 100%;
+
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 152 76% 36%;
+
+    --radius: 1.25rem;
+
+    /* Chat Simulation */
+    --chat-bg: 60 10% 98%;
+    --bubble-bot: 0 0% 100%;
+    --bubble-user: 152 60% 92%;
+    --chat-header: 0 0% 100%;
+    --chat-header-foreground: 210 25% 12%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(152 76% 36%), hsl(175 75% 36%));
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%), hsl(152 30% 97%));
+
+    /* Shadows - softer and more elegant */
+    --shadow-bubble: 0 4px 12px -2px hsl(200 25% 12% / 0.05);
+    --shadow-elegant: 0 24px 48px -12px hsl(152 76% 36% / 0.15);
+    --shadow-soft: 0 12px 32px -8px hsl(200 25% 12% / 0.06);
+
+    --transition-smooth: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Deep OLED-like blacks */
+    --background: 220 15% 4%;
+    --foreground: 210 10% 98%;
+    --card: 220 15% 7%;
+    --card-foreground: 210 10% 98%;
+    --popover: 220 15% 7%;
+    --popover-foreground: 210 10% 98%;
+    
+    --primary: 152 65% 50%;
+    --primary-foreground: 220 15% 4%;
+    --secondary: 220 15% 12%;
+    --secondary-foreground: 210 10% 98%;
+    --muted: 220 15% 12%;
+    --muted-foreground: 215 15% 65%;
+    --accent: 152 40% 15%;
+    --accent-foreground: 152 65% 85%;
+    --destructive: 350 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 15% 14%;
+    --input: 220 15% 14%;
+    --ring: 152 65% 50%;
+    
+    --chat-bg: 220 15% 2%;
+    --bubble-bot: 220 15% 9%;
+    --bubble-user: 152 60% 18%;
+    --chat-header: 220 15% 6%;
+    --chat-header-foreground: 210 10% 98%;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Outfit', sans-serif;
+    font-feature-settings: "ss01", "cv11";
+  }
+}
+
+@layer utilities {
+  .bg-chat-pattern {
+    background-color: hsl(var(--chat-bg));
+    background-image:
+      radial-gradient(hsl(var(--foreground) / 0.05) 1px, transparent 1px),
+      radial-gradient(hsl(var(--foreground) / 0.04) 1px, transparent 1px);
+    background-size: 24px 24px, 48px 48px;
+    background-position: 0 0, 12px 12px;
+  }
+  .gradient-hero { background: var(--gradient-hero); }
+  .shadow-bubble { box-shadow: var(--shadow-bubble); }
+  .shadow-elegant { box-shadow: var(--shadow-elegant); }
+  .shadow-soft { box-shadow: var(--shadow-soft); }
+  
+  .glassmorphism {
+    @apply bg-white/70 dark:bg-black/60 backdrop-blur-xl border border-white/40 dark:border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.05)] dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.4)];
+  }
+}
