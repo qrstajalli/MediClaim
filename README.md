@@ -1,33 +1,33 @@
-# [cite_start]MediClaim: The Zero-UI Medical Claim Agent for Bharat [cite: 1, 2]
+# MediClaim: The Zero-UI Medical Claim Agent for Bharat : 1, 2]
 
-[cite_start]**"No App. No English. No Rejections."** [cite: 22]
+**"No App. No English. No Rejections."** : 22]
 
-[cite_start]Mediclaim is a "Zero-UI" AI agent designed to remove the friction of filing health insurance claims in India[cite: 12]. [cite_start]Instead of complex apps, users interact via WhatsApp using voice notes in their native language and photos of physical bills[cite: 13].
+Mediclaim is a "Zero-UI" AI agent designed to remove the friction of filing health insurance claims in India: 12]. Instead of complex apps, users interact via WhatsApp using voice notes in their native language and photos of physical bills: 13].
 
 ---
 
-## [cite_start]🏥 The Problem [cite: 3]
-[cite_start]The claim filing process in India remains fundamentally broken for the average citizen due to several factors: [cite: 4]
-* [cite_start]**High Cognitive Load**: Navigating complex apps and English-only insurance jargon[cite: 5].
-* [cite_start]**Document Friction**: Messy, handwritten prescriptions and faded pharmacy bills[cite: 8].
-* [cite_start]**Delayed Rejections**: Claims rejected after weeks due to missing stamps or signatures[cite: 9].
-* [cite_start]**Language Barrier**: Most systems alienate non-English speaking demographics[cite: 10].
+## 🏥 The Problem : 3]
+The claim filing process in India remains fundamentally broken for the average citizen due to several factors: : 4]
+* **High Cognitive Load**: Navigating complex apps and English-only insurance jargon: 5].
+* **Document Friction**: Messy, handwritten prescriptions and faded pharmacy bills: 8].
+* **Delayed Rejections**: Claims rejected after weeks due to missing stamps or signatures: 9].
+* **Language Barrier**: Most systems alienate non-English speaking demographics: 10].
 
-## [cite_start]✨ Core Features [cite: 15]
-* [cite_start]**Multimodal Document Extraction**: Reads handwritten doctor prescriptions and thermal receipts[cite: 16].
-* [cite_start]**Voice-First Conversational Interface**: Allows interaction via regional voice notes[cite: 17].
-* [cite_start]**Instant Error Detection**: Scans for mandatory elements like doctor signatures and hospital stamps before submission[cite: 18].
-* [cite_start]**Policy Rule Engine**: Cross-references expenses against specific policy limits and exclusions[cite: 19].
-* [cite_start]**Auto-Claim Generation**: Compiles approved data into standardized PDF formats required by TPAs[cite: 20].
+## ✨ Core Features : 15]
+* **Multimodal Document Extraction**: Reads handwritten doctor prescriptions and thermal receipts: 16].
+* **Voice-First Conversational Interface**: Allows interaction via regional voice notes: 17].
+* **Instant Error Detection**: Scans for mandatory elements like doctor signatures and hospital stamps before submission: 18].
+* **Policy Rule Engine**: Cross-references expenses against specific policy limits and exclusions: 19].
+* **Auto-Claim Generation**: Compiles approved data into standardized PDF formats required by TPAs: 20].
 
-## [cite_start]🛠 Tech Stack [cite: 24]
+## 🛠 Tech Stack : 24]
 | Component | Technology | Purpose |
 | :--- | :--- | :--- |
-| **User Interface** | WhatsApp Business API | [cite_start]The "Zero-UI" frontend for interaction[cite: 26]. |
-| **Core AI Engine** | Google Gemini 1.5 Pro API | [cite_start]Multimodal analysis and policy reasoning[cite: 26]. |
-| **Voice & Language** | Google Cloud Translation & Speech APIs | [cite_start]Processing vernacular voice notes[cite: 26]. |
-| **Backend & Logic** | Node.js / Express | [cite_start]Webhook server for messaging loops[cite: 26]. |
-| **Database & Storage**| Firebase / Supabase | [cite_start]Secure storage for sessions and medical documents[cite: 26]. |
+| **User Interface** | WhatsApp Business API | The "Zero-UI" frontend for interaction: 26]. |
+| **Core AI Engine** | Google Gemini 1.5 Pro API | Multimodal analysis and policy reasoning: 26]. |
+| **Voice & Language** | Google Cloud Translation & Speech APIs | Processing vernacular voice notes: 26]. |
+| **Backend & Logic** | Node.js / Express | Webhook server for messaging loops: 26]. |
+| **Database & Storage**| Firebase / Supabase | Secure storage for sessions and medical documents: 26]. |
 
 ## 📁 Project Structure
 The project is organized as follows:
